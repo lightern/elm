@@ -5,6 +5,10 @@ import Html exposing (program, div, button, text)
 import Html.Events exposing (onClick)
 import Html.Attributes exposing (style)
 
+import Http
+import Json.Decode as Decode
+-- https://github.com/elm-lang/http
+
 main =
   program { init = init, update = update, view = view, subscriptions = subscriptions }
   
@@ -34,8 +38,8 @@ update msg model =
 
 view model =
   div []
-    [ div [ style [ ("backgroundColor", "red")
-    , ("height", "90px")
+    [ div [ style [ ("backgroundColor", "#C3C3C3")
+    , ("height", "70px")
     , ("width", "100%") ]] []
     , button [ onClick Decrement ] [ text "-" ]
     , div [] [ text (toString model) ]
