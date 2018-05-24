@@ -8,23 +8,31 @@ import Html.Attributes exposing (style)
 import Http
 import Json.Decode as Decode
 -- https://github.com/elm-lang/http
+-- http://elm-lang.org/examples/http
 
+
+------ // "Does nothing, but says the obvious"
 main =
   program { init = init, update = update, view = view, subscriptions = subscriptions }
   
 
 -- MODEL
 
+------ // "Store of values and definition of the first values, here constructor"
 model = init
 
+------ // "Constructor, could had given values directly as well"
 init = ( 0, Cmd.none)
 
 
 -- UPDATE
 
-type Msg = Increment | Decrement
+------ // "What 'functions' there are?"
+type Msg
+  = Increment 
+  | Decrement
 
-
+------ // "What do these functions do?"
 update msg model =
   case msg of
     Increment ->
@@ -35,7 +43,7 @@ update msg model =
       
 
 -- VIEW
-
+------ // "What's in the DOM?"
 view model =
   div []
     [ div [ style [ ("backgroundColor", "#C3C3C3")
@@ -49,3 +57,8 @@ view model =
 -- SUBSCRIPTIONS
 
 subscriptions model = Sub.none
+
+-- HTTP
+
+------ // "The actual functions...???"
+-- getJson : String -> Cmd Msg
