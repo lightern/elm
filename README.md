@@ -22,6 +22,9 @@ import Html.Attributes (..)
 
 ## Quick vocabulary:
 
+#### Structure:
+* https://medium.com/3-elm-erlang-elixir/spa-in-elm-part-1-7bc84287cade
+
 #### Program
 * A subscription is a way of saying “Hey Elm, I need you to listen for any updates about these various things.” Now when you get a geolocation change or a websocket message, it will be given to your update function.
 * http://package.elm-lang.org/packages/elm-lang/html/1.1.0/Html-App#program
