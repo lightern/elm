@@ -22,6 +22,10 @@ import Html.Attributes (..)
 
 ## Quick vocabulary:
 
+#### Subscriptions:
+* A subscription is a way of saying “Hey Elm, I need you to listen for any updates about these various things.” Now when you get a geolocation change or a websocket message, it will be given to your update function.
+* http://package.elm-lang.org/packages/elm-lang/html/1.1.0/Html-App#program
+
 #### Commands:
 * Commands (Cmd) are how we tell the runtime to execute things that involve side effects (not to be mixed with console).
 * https://www.elm-tutorial.org/en/03-subs-cmds/02-commands.html
