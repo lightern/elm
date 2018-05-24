@@ -3,7 +3,7 @@
 
 import Html exposing (program, div, button, text)
 import Html.Events exposing (onClick)
-
+import Html.Attributes exposing (style)
 
 main =
   program { init = init, update = update, view = view, subscriptions = subscriptions }
@@ -34,7 +34,10 @@ update msg model =
 
 view model =
   div []
-    [ button [ onClick Decrement ] [ text "-" ]
+    [ div [ style [ ("backgroundColor", "red")
+    , ("height", "90px")
+    , ("width", "100%") ]] []
+    , button [ onClick Decrement ] [ text "-" ]
     , div [] [ text (toString model) ]
     , button [ onClick Increment ] [ text "+" ]
     ]
