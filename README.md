@@ -15,6 +15,11 @@ elm-reactor
 List.filter (\str -> str == "a") ["a", "b", "a", "c", "a"]
 ```
 
+#### Tob be able to use HTML Attributes:
+```
+import Html.Attributes (..)
+```
+
 ## Quick vocabulary:
 
 #### Commands:
