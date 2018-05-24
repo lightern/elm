@@ -11,12 +11,11 @@ main =
 
 -- MODEL
 
-model = 0
-
+model = init
 
 init = ( 0, Cmd.none)
 
-subscriptions model = Sub.none
+
 -- UPDATE
 
 type Msg = Increment | Decrement
@@ -39,3 +38,7 @@ view model =
     , div [] [ text (toString model) ]
     , button [ onClick Increment ] [ text "+" ]
     ]
+
+-- SUBSCRIPTIONS
+
+subscriptions model = Sub.none
