@@ -27,7 +27,7 @@ init = ( 0, Cmd.none)
 
 -- UPDATE
 
------- // "What 'functions' there are?"
+------ // "What 'functions or actions' there are, that can be called from dom?"
 type Msg
   = Increment 
   | Decrement
@@ -60,5 +60,5 @@ subscriptions model = Sub.none
 
 -- HTTP
 
------- // "The actual functions...???"
+------ // "The actual functions that are called from init or 'type-functions/actions'"
 -- getJson : String -> Cmd Msg
