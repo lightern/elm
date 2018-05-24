@@ -1,4 +1,4 @@
-### Some basic commands
+## Some basic commands
 
 #### Start new projects with:
 ```
@@ -17,7 +17,7 @@ List.filter (\str -> str == "a") ["a", "b", "a", "c", "a"]
 
 ### Quick vocabulary:
 
-#### Commands:
+### Commands:
 * Commands (Cmd) are how we tell the runtime to execute things that involve side effects (not to be mixed with console).
 * https://www.elm-tutorial.org/en/03-subs-cmds/02-commands.html
 
