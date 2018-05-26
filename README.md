@@ -4,6 +4,10 @@
 ```
 elm-package install
 ```
+#### Install packages:
+```
+elm-package install elm-lang/http
+```
 
 #### Start hosting:
 ```
